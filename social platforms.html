@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Social links profile card</title>
+
+  <!-- Inter font (optional) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap""stylesheet">
+
+  <style>
+    :root{
+      --bg: #141414;
+      --card: #1f1f1f;
+      --button: #333333;
+      --button-hover: #c4f82a;
+      --text: #ffffff;
+      --accent: #c4f82a;
+      --muted: #9ca3af;
+      --radius: 12px;
+    }
+
+    *{ box-sizing: border-box; }
+
+    body{
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    .card{
+      width: 100%;
+      max-width: 360px;
+      background: var(--card);
+      padding: 32px 28px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 12px 24px rgba(0,0,0,.15);
+    }
+
+    .avatar{
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    h1{
+      font-size: 1.5rem;
+      margin: 0 0 6px;
+      font-weight: 700;
+    }
+
+    .location{
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .bio{
+      color: var(--muted);
+      font-size: .9rem;
+      margin-bottom: 24px;
+    }
+
+    .links{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 12px;
+    }
+
+    .links a{
+      display: block;
+      background: var(--button);
+      color: var(--text);
+      text-decoration: none;
+      padding: 14px 0;
+      border-radius: var(--radius);
+      font-weight: 600;
+      transition: background .15s, color .15s;
+    }
+
+    .links a:hover,
+    .links a:focus{
+      background: var(--button-hover);
+      color: #000;
+    }
+    @media (max-width: 380px){
+      .card{ margin: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="card" role="main">
+    <!-- Replace avatar.jpg with your own image path -->
+    <img class="" src="" alt="Portrait of Jessica Randall" />
+
+    <h1>Arun❤️ </h1>
+    <p class="location">Trichy,India</p>
+    <p class="bio">"Front-end developer and avid reader."</p>
+
+    <ul class="links">
+      <li><a href="https://www.cricbuzz.com/" target="_blank" rel="noopener">Cricbuzz</a></li>
+      <li><a href=https://prepinstaprime.com/home" target="_blank" rel="noopener">prepinsta</a></li>
+      <li><a href="https://www.linkedin.com/feed/" target="_blank" rel="neopener">linkedin </a></li>
+      <li><a href="https://www.frontendmentor.io/home" target="_blank"rel="noopener">Instagram</a></li>
+    </ul>
+  </main>
+
+</body>
+</html>
