@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1>Front-end Projects</h1>
-    <a href="Social Media Profile/index.html">
+    <a href="Social Media Profile/ProfileCard.html">
         <button>Social Media Profile Card</button>
     </a>
 </body>
